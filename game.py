@@ -63,7 +63,7 @@ while running:
     if keys["down"]:
         power = max(-1.0, power - 0.1)
 
-    boat.update(power)
+    boat.update(power, dt=1/FPS)
     boat_x, boat_y = boat.pos
     # Рендеринг
     screen.fill(BLUE)
